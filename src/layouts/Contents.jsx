@@ -1,10 +1,12 @@
-import React from 'react'
-import AboutList from '../pages/AboutList'
+import React from "react";
+import AboutList from "../pages/AboutList";
+import FeatureList from "../pages/FeatureList";
 
 export default function Contents() {
   return (
     <div>
-        <AboutList/>
+      <FeatureList />
+      <AboutList />
     </div>
-  )
+  );
 }
