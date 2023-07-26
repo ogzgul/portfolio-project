@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Container, Menu } from "semantic-ui-react";
 
+
 export default function Navi() {
   return (
     <div>
@@ -14,7 +15,9 @@ export default function Navi() {
             </Menu.Item>
           </Menu.Menu>
         </Container>
+        
       </Menu>
+      
     </div>
   );
 }

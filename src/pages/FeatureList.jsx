@@ -10,10 +10,10 @@ export default function FeatureList() {
     featureService.getFeature().then((result) => setFeature(result.data.data));
   }, []);
   return (
-    <div>
+    <div >
      {features.map((feature) => (
          <Container text key={feature.featureID}>
-         <Header
+         <Header 
            as='h1'
            style={{
              fontWeight: 'normal',
