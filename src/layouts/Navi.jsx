@@ -7,8 +7,8 @@ export default function Navi() {
     <div>
       <Menu inverted fixed="top">
         <Container >
-        <Menu.Menu position="right">
-          <Menu.Item name="home" />
+        <Menu.Item name="home" />
+        <Menu.Menu position="right">         
           <Menu.Item name="messages" />
             <Menu.Item>
               <Button primary>Kayıt Ol!</Button>

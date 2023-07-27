@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PortfolioService from "../services/portfolioService";
-import { Image } from 'semantic-ui-react'
+import { Divider, Image } from 'semantic-ui-react';
+
 
 export default function PortfolioList() {
 
@@ -12,8 +13,10 @@ export default function PortfolioList() {
     }, []);
   return (
     <div>
+      <h1>My Projects</h1>
         {portfolios.map((portfolio) => (
              <Image
+             key={portfolio.portfolioID}
              src={portfolio.imageUrl}
              as='a'
              size='medium'
@@ -21,6 +24,8 @@ export default function PortfolioList() {
              target='_blank'
            />
         ))}
+        <Divider/>
+        <br></br>
     </div>
   )
 }

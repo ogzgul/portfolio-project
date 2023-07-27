@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import AboutService from "../services/aboutService";
 import {
   Container,
+  Divider,
   Grid,
   Header,
   Image,
@@ -40,6 +41,7 @@ export default function AboutList() {
           </Grid>
         </Segment>
       </Container>
+      <Divider></Divider>
     </div>
   );
 }
