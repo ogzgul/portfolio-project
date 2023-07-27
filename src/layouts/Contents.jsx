@@ -5,6 +5,7 @@ import PortfolioList from "../pages/PortfolioList";
 import ServiceList from "../pages/ServiceList";
 import SkillList from "../pages/SkillList";
 import ExperienceList from "../pages/ExperienceList";
+import TestimonialList from "../pages/TestimonialList";
 
 
 export default function Contents() {
@@ -16,6 +17,7 @@ export default function Contents() {
       <SkillList/>
       <PortfolioList/>
       <ExperienceList/>
+      <TestimonialList/>
     </div>
   );
 }
