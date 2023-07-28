@@ -3,6 +3,7 @@ import "./App.css";
 import Dashboard from "./layouts/Dashboard";
 import "semantic-ui-css/semantic.min.css";
 import Navi from "./layouts/Navi";
+import SocialMediaList from "./pages/SocialMediaList";
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Container className="main">
         <Dashboard />
       </Container>
+      <SocialMediaList/>
     </div>
   );
 }

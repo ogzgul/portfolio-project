@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import TestimonialService from "../services/testimonialService";
-import { Card, Image } from "semantic-ui-react";
+import { Card, Divider, Image } from "semantic-ui-react";
 
 export default function TestimonialList() {
   const [testimonials, setTestimonials] = useState([]);
@@ -14,22 +14,24 @@ export default function TestimonialList() {
     <div>
       <Card.Group>
         <Card fluid>
+          <h2>Testimonials</h2>
           {testimonials.map((testimonial) => (
             <Card.Content>
               <Image
                 floated="right"
-                size="mini"
+                size="small"
                 src={testimonial.imageUrl}
               />
               <Card.Header>{testimonial.clientName}</Card.Header>
               <Card.Meta>{testimonial.company}</Card.Meta>
-              <Card.Description>
+              <Card.Meta>
                 {testimonial.comment}
-              </Card.Description>
+              </Card.Meta>
             </Card.Content>
           ))}
         </Card>
       </Card.Group>
+      <Divider/>
     </div>
   );
 }
