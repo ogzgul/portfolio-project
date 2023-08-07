@@ -1,5 +1,7 @@
 import React from "react";
-import { Button, Container, Menu } from "semantic-ui-react";
+import { Container, Menu } from "semantic-ui-react";
+import SignedOut from "./SignedOut";
+import SignedIn from "./SignedIn";
 
 
 export default function Navi() {
@@ -15,9 +17,8 @@ export default function Navi() {
           <Menu.Item name="Portfolio" />
           <Menu.Item name="Experience" />
           <Menu.Item name="Contact" />
-            <Menu.Item>
-              <Button primary>Kayıt Ol!</Button>
-            </Menu.Item>
+            <SignedOut/>
+            <SignedIn/>
           </Menu.Menu>
         </Container>
         

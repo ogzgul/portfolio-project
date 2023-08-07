@@ -23,6 +23,9 @@ export default function AboutList() {
           <Grid container stackable verticalAlign="middle">
             {abouts.map((about) => (
               <Grid.Row key={about.aboutID}>
+                <Grid.Column floated="left" width={6}>
+                  <Image bordered rounded size="large" src={about.imageUrl} />
+                </Grid.Column>
                 <Grid.Column width={8}>
                   <Header as="h3" style={{ fontSize: "2em" }}>
                     {about.title}
@@ -32,9 +35,6 @@ export default function AboutList() {
                   <p> Mail: {about.mail}</p>
                   <p> Telefon: {about.phone}</p>
                   <p> Adres: {about.address}</p>
-                </Grid.Column>
-                <Grid.Column floated="right" width={6}>
-                  <Image bordered rounded size="large" src={about.imageUrl} />
                 </Grid.Column>
               </Grid.Row>
             ))}
