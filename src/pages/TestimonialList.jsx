@@ -11,7 +11,7 @@ export default function TestimonialList() {
       .then((result) => setTestimonials(result.data.data));
   }, []);
   return (
-    <div>
+    <div id="section6">
       <Card.Group>
         <Card fluid>
           <h2>Testimonials</h2>

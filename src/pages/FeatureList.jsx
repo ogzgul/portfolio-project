@@ -11,7 +11,7 @@ export default function FeatureList() {
     setIsLoading(false);
   }, []);
   return (
-    <div>
+    <div id="section0">
       {isLoading ? (
         <Loader active inline />
       ) : (

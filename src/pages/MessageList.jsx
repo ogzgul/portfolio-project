@@ -9,7 +9,7 @@ export default function MessageList() {
     contactService.getContact().then((result) => setContact(result.data.data));
   }, []);
   return (
-    <div>
+    <div id="section7">
       <h1>
         {" "}
         <strong>My Contacts</strong>

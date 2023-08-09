@@ -9,7 +9,7 @@ export default function ServiceList() {
     serviceService.getService().then((result) => setServices(result.data.data));
   }, []);
   return (
-    <div>
+    <div id="section2">
       <Grid centered columns={6}>
         <h1>My Services</h1>
         <br></br>

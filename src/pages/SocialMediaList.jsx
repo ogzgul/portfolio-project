@@ -15,7 +15,7 @@ export default function SocialMediaList() {
       .then((result) => setSocialMedia(result.data.data));
   });
   return (
-    <div>
+    <div id="section8">
       <Segment
         inverted
       >

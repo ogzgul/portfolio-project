@@ -9,7 +9,7 @@ export default function SkillList() {
     skillService.getSkill().then((result) => setSkills(result.data.data));
   }, []);
   return (
-    <div>
+    <div id="section3">
       <h1>My Skills</h1>
       <Grid columns={2} divided>
         <Grid.Row>

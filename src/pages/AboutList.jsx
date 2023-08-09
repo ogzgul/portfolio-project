@@ -17,8 +17,8 @@ export default function AboutList() {
   }, []);
 
   return (
-    <div>
-      <Container>
+    <div id="section1">
+      <Container >
         <Segment vertical>
           <Grid container stackable verticalAlign="middle">
             {abouts.map((about) => (
