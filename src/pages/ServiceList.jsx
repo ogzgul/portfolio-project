@@ -15,7 +15,7 @@ export default function ServiceList() {
         <br></br>
         <Grid.Row>
           {services.map((service) => (
-            <Grid.Column>
+            <Grid.Column key={service.serviceID}>
               <Image src={service.imageUrl} />
               <h3>{service.title}</h3>
             </Grid.Column>

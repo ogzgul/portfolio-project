@@ -17,7 +17,7 @@ export default function MessageList() {
       <br />
       <Grid>
         {contacts.map((contact) => (
-          <Grid.Row>
+          <Grid.Row key={contact.contactID}>
             <Grid.Column width={8}>
               <Form>
                 <Form.Group widths="equal">

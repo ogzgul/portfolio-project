@@ -13,7 +13,7 @@ export default function ExperienceList() {
   return (
     <div id="section5">
       {experiences.map((experience) => (
-        <Grid columns={2} divided>
+        <Grid key={experience.experienceID} columns={2} divided>
           <Grid.Row>
             <Grid.Column key={experience.experienceID}>
               <h2>{experience.name}</h2>

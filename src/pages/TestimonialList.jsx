@@ -16,7 +16,7 @@ export default function TestimonialList() {
         <Card fluid>
           <h2>Testimonials</h2>
           {testimonials.map((testimonial) => (
-            <Card.Content>
+            <Card.Content key={testimonial.testimonialID}>
               <Image
                 floated="right"
                 size="small"
